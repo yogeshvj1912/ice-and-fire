@@ -47,13 +47,14 @@ let button=document.createElement("button");
   let released=detailBox("p","id","released");
   let characters=detailBox("p","id","characters");
   let abc=detailBox("p","id","nonumber");
-  book.append(bookname,isbn,numberOfPages,authors,publisher,released,characters,abc);
-  mainBook.append(book);
-  document.body.append(mainBook);
   
 
   async function foo(){
   try {
+    book.append(bookname,isbn,numberOfPages,authors,publisher,released,characters,abc);
+  mainBook.append(book);
+  document.body.append(mainBook);
+  
   let booknumber=document.getElementById("main").value;
   console.log(booknumber);
   
